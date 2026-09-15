@@ -74,7 +74,7 @@ func main() {
 	}
 
 	server := &http.Server{
-		Addr:              "127.0.0.1:" + port,
+		Addr:              ":" + port,
 		Handler:           app.routes(),
 		ReadHeaderTimeout: 5 * time.Second,
 		IdleTimeout:       60 * time.Second,
